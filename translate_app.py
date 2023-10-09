@@ -7,7 +7,7 @@ openai.api_key = "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"
 # Function to translate text using GPT-3.5 Turbo model
 def translate_text(text):
     response = openai.Completion.create(
-        engine="text-davinci-003",
+        engine="gpt-3.5-turbo-16k",
         prompt=text,
         max_tokens=100,
         temperature=0.7,
