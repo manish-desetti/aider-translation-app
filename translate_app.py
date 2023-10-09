@@ -10,6 +10,8 @@ def translate_text(text, target_language):
         prompt = f"Translate the following English text to German:\n\n{text}"
     elif target_language == "French":
         prompt = f"Translate the following English text to French:\n\n{text}"
+    elif target_language == "Spanish":
+        prompt = f"Translate the following English text to Spanish:\n\n{text}"
     else:
         return "Invalid language selection"
     
@@ -27,7 +29,7 @@ def translate_text(text, target_language):
 def main():
     st.title("English Translation")
     input_text = st.text_input("Enter text in English")
-    target_language = st.radio("Select target language", ("German", "French"))
+    target_language = st.radio("Select target language", ("German", "French", "Spanish"))
     
     if st.button("Translate"):
         if input_text:
