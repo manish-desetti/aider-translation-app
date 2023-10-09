@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 
 # Set up OpenAI API credentials
-openai.api_key = "YOUR_API_KEY"
+openai.api_key = "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"
 
 # Function to translate text using GPT-3.5 Turbo model
 def translate_text(text):
